@@ -1,0 +1,68 @@
+getHero
+
+query{
+    heroes{
+        id,
+        superhero,
+        publisher,
+        alter_ego,
+        first_appearance,
+        characters
+    }
+}
+
+createHero
+
+mutation {
+    createHero(superhero:"Batman",publisher:"DC Comics",alter_ego:"Bruce Wayne",first_appearance:"Detective Comics N27",characters:"Bruce Wayne"){
+        id,
+        superhero,
+        publisher,
+        alter_ego,
+        first_appearance,
+        characters
+    }
+}
+mutation {
+    createHero(superhero:"Superman",publisher:"DC Comics",alter_ego:"Kal-El",first_appearance:"Action Comics N1",characters:"Kal-El"){
+        id,
+        superhero,
+        publisher,
+        alter_ego,
+        first_appearance,
+        characters
+    }
+}
+mutation {
+    createHero(superhero:"Spider Man",publisher:"Marvel Comics",alter_ego:"Peter Parker",first_appearance:"Amazing Fantasy N15",characters:"Peter Parker"){
+        id,
+        superhero,
+        publisher,
+        alter_ego,
+        first_appearance,
+        characters
+    }
+}
+mutation {
+    createHero(superhero:"Captain America",publisher:"Marvel Comics",alter_ego:"Steve Rogers",first_appearance:"Captain America Comics N1",characters:"Steve Rogers"){
+        id,
+        superhero,
+        publisher,
+        alter_ego,
+        first_appearance,
+        characters
+    }
+}
+
+deleteHero
+
+mutation {
+    deleteHero(id:1){
+        id,
+        superhero,
+        publisher,
+        alter_ego,
+        first_appearance,
+        characters
+    }
+}
